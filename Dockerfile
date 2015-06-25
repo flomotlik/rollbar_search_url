@@ -1,4 +1,4 @@
-FROM ruby:2.2.1
+FROM ruby:2.2.2
 MAINTAINER flomotlik@gmail.com
 
 RUN mkdir -p /app/lib/rollbar_search_url
