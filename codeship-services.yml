@@ -1,0 +1,4 @@
+app:
+  build:
+    image: flomotlik/discourse
+    dockerfile_path: Dockerfile
