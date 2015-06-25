@@ -1,6 +1,6 @@
 # RollbarSearchURL
 
-This gem allows you to create URLs wo use with Rollbar RQL in an ActiveRecord like syntax
+This gem allows you to create URLs to use with Rollbar RQL in an ActiveRecord like syntax
 
 ## Installation
 
