@@ -19,22 +19,27 @@ module RollbarSearchUrl
 
     def select select_statement
       @select << select_statement
+      self
     end
 
     def where where_statement
       @where << where_statement
+      self
     end
 
     def group_by group_by_statement
       @group_by = group_by_statement
+      self
     end
 
     def order_by order_by_statement
       @order_by = order_by_statement
+      self
     end
 
     def limit limit
       @limit = limit
+      self
     end
 
     def url
