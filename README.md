@@ -1,8 +1,6 @@
-# RollbarSearchURL 
+# RollbarSearchURL
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/papertrail_url`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem allows you to create URLs wo use with Rollbar RQL in an ActiveRecord like syntax
 
 ## Installation
 
@@ -25,8 +23,8 @@ Or install it yourself as:
 ```ruby
 require 'rollbar_search_url'
 query = RollbarSearchUrl::Query.new user:YOUR_USERNAME, project: YOUR_PROJECT_NAME
-query.where 'timestamp > unix_timestamp() - 60 * 60 * 24'
-query.where “request.commit_id = abcde"
+query.where    'timestamp > unix_timestamp() - 60 * 60 * 24'
+query.where    'request.commit_id = abcde'
 query.order_by 'timestamp DESC'
 query.url
 ```
