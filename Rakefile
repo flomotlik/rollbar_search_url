@@ -5,5 +5,5 @@ Rake::TestTask.new do |t|
   t.libs << "test"
   t.test_files = FileList['test/test*.rb']
   t.verbose = true
-  t.options = "-p"
+  #t.options = "-p"
 end
